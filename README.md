@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+💬 Modern Chat Application
+A fully-functional, real-time messaging interface built with Next.js, TypeScript, and Tailwind CSS.
+Show Image
+Features
+Core Functionality
 
-## Getting Started
+✅ Real-time messaging with message bubbles and timestamps
+✅ User status management (Online, Busy, BRB, Offline)
+✅ Message reactions - Add/remove emoji reactions to messages
+✅ Typing indicators - Shows when other users are typing
+✅ Emoji picker - Insert emojis into your messages
 
-First, run the development server:
+UI Components
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🎨 Modern gradient UI with beautiful animations
+📱 Fully responsive design - Works on desktop, tablet and mobile
+🌙 Dark theme optimized for comfort
+📈 Elegant transitions using Framer Motion
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+User Experience
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔍 Searchable conversations
+🔔 Unread message counters
+👤 User profiles with status indicators
+📱 Mobile-friendly sidebar that collapses on smaller screens
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Technical Implementation
+This application is created as a single .tsx file that includes:
 
-## Learn More
+React functional components with TypeScript interfaces
+Custom hooks for state management
+Framer Motion animations for smooth transitions
+Tailwind CSS for styling without external UI libraries
+Mock data structure for users and messages
 
-To learn more about Next.js, take a look at the following resources:
+How to Use
+Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a new Next.js project:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+bashnpx create-next-app@latest my-chat-app
 
-## Deploy on Vercel
+Install dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+bashnpm install framer-motion emoji-picker-react lucide-react
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Copy ChatApp.tsx to your project
+Import and use the component in your page
+
+Running the App
+bashnpm run dev
+Design Choices
+UI/UX Philosophy
+
+Dark theme with purple/indigo accents for visual comfort
+Message bubbles with color-coding for sender identification
+Gradient elements to create visual hierarchy
+Subtle animations that enhance the experience without overwhelming the user
+
+Animation Strategy
+
+Micro-animations provide feedback for user actions
+Scale transforms on hover for interactive elements
+Smooth transitions for modals and dropdowns
+Subtle bounce animations for typing indicators
+
+Implementation Details
+State Management
+
+User online status and current user selection
+Message input and sending functionality
+Emoji picker toggle state
+Sidebar visibility for responsive design
+
+Component Structure
+
+ChatApp: Main container component
+Navbar: Top navigation with user controls
+Sidebar: User list with search capability
+ChatWindow: Message display area
+MessageInput: Text input with emoji picker
+
+Future Enhancements
+While the current implementation meets all requirements, future iterations could include:
+
+Group chat functionality
+File sharing capabilities
+Voice/video call integration
+Message search functionality
+End-to-end encryption indicators
+Message threading for organized conversations
+
+
+Created with ❤️ for the Frontend Developer Assignment
