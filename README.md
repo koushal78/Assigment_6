@@ -45,3 +45,11 @@ cd chat-app
    ```
 4. ScreenShots
    ![screenshot](https://github.com/koushal78/Assigment_6/blob/main/public/Screenshot%202025-05-31%20082740.png)
+
+   
+  ![screenshot](https://github.com/koushal78/Assigment_6/blob/main/public/Screenshot%202025-05-31%20082755.png)
+
+  ![screenshot](https://github.com/koushal78/Assigment_6/blob/main/public/Screenshot%202025-05-31%20082808.png)
+
+
+   
